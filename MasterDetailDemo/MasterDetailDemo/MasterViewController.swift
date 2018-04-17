@@ -69,7 +69,8 @@ extension MasterViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        cell.textLabel!.text = "The time will be " + object.description
+
         return cell
     }
 
