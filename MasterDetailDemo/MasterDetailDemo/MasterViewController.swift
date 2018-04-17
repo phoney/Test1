@@ -13,7 +13,6 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -58,11 +57,9 @@ class MasterViewController: UITableViewController {
         }
     }
 
-    // MARK: - Table View
+}
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+extension MasterViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return objects.count
@@ -90,6 +87,4 @@ class MasterViewController: UITableViewController {
         }
     }
 
-
 }
-
